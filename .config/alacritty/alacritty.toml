@@ -3,7 +3,14 @@ TERM = "xterm-256color"
 
 [window]
 decorations = "None"
+startup_mode = "Maximized"
+decorations_theme_variant = "Dark"
 
 [font]
 normal.family = "JetBrainsMono Nerd Font"
 size = 12
+
+[colors]
+# Цвета при выборе папки при автодополнении
+normal.green = "#3a3a7a" #Цвет фона
+normal.blue = "#c5c585" #Цвет букв
