@@ -2,7 +2,7 @@
 TERM = "xterm-256color"
 
 [window]
-decorations = "Full"
+decorations = "None"
 
 [font]
 normal.family = "JetBrainsMono Nerd Font"
