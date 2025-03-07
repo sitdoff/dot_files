@@ -74,7 +74,7 @@ module-margin-right = 2
 
 modules-left = bspwm
 modules-center = mpd
-modules-right = pulseaudio-control-output pulseaudio-control-input filesystem xkeyboard cpu eth temperature date powermenu
+modules-right = pulseaudio-control-output pulseaudio-control-input filesystem xkeyboard cpu eth temperature date weather powermenu
 
 tray-position = right
 tray-padding = 2
@@ -515,6 +515,12 @@ click-left = pulseaudio-control --node-type input togmute
 click-middle = pulseaudio-control --node-type input next-node
 scroll-up = pulseaudio-control --node-type input --volume-max 130 up
 scroll-down = pulseaudio-control --node-type input --volume-max 130 down
+
+[module/weather]
+type = custom/script
+exec = $HOME/.config/polybar/weather-plugin.sh
+tail = false
+interval = 960
 
 
 [settings]
