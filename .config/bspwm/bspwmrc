@@ -13,6 +13,7 @@ qbittorrent &
 thunderbird &
 picom &
 /opt/nekoray/nekoray -tray -appdata &
+/opt/urserver/urserver-start --no-manager --no-notify &
 "$HOME"/Telegram/Telegram &
 "$HOME"/.config/polybar/launch.sh &
 "$HOME"/.config/polybar/pulse-control &
