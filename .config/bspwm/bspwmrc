@@ -1,9 +1,8 @@
 #! /bin/sh
 
-echo "$PATH" >"$HOME"/path.log
-
 pgrep -x sxhkd >/dev/null || sxhkd &
 picom -c &
+dunst &
 firefox &
 flameshot &
 korganizer &
@@ -16,6 +15,7 @@ nitrogen --restore &
 "$HOME"/.config/polybar/launch.sh &
 "$HOME"/.config/polybar/pulse-control &
 qbittorrent &
+>>/tmp/bspwm.log
 
 # Переключение языка на оба шифта
 setxkbmap -layout 'us,ru' -option 'grp:shifts_toggle,compose:menu' >~/xkb.log
