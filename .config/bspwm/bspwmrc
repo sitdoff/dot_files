@@ -8,6 +8,7 @@ firefox &
 flameshot &
 korganizer &
 thunderbird &
+yakuake &
 nitrogen --restore &
 /opt/nekoray/nekoray -tray -appdata &
 /opt/urserver/urserver-start --no-manager --no-notify &
