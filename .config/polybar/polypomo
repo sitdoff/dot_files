@@ -1,24 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import os
-import sys
-import socket
 import argparse
 import operator
-import time
-import select
-from contextlib import contextmanager
-from subprocess import call, DEVNULL
-import sqlite3
+import os
 import pathlib
-
+import select
+import socket
+import sqlite3
+import sys
+import time
+from contextlib import contextmanager
+from subprocess import DEVNULL, call
 
 SOCKDIR = os.environ.get("XDG_RUNTIME_DIR", "/var/tmp")
 SOCKFILE = os.path.join(SOCKDIR, "polypomo.sock")
-TOMATO = "\U0001F345"  # Recommended font: Noto Emoji
-BREAK = "\U0001F3D6"  # Recommended font: Noto Emoji
-PAUSE = "\U000023F8"  # Recommended font: Siji
+TOMATO = "\U0001f345"  # Recommended font: Noto Emoji
+BREAK = "\U0001f3d6"  # Recommended font: Noto Emoji
+PAUSE = "\U000023f8"  # Recommended font: Siji
 
 
 class Exit(Exception):
@@ -365,7 +364,7 @@ def parse_args():
     parser.add_argument(
         "--breaktime",
         type=int,
-        default=3 * 60,
+        default=5 * 60,
         help="Default break timer time in seconds",
     )
     parser.add_argument(
