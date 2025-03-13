@@ -18,7 +18,7 @@ qbittorrent &
 >>/tmp/bspwm.log
 
 # Переключение языка на оба шифта
-setxkbmap -layout 'us,ru' -option 'grp:shifts_toggle,compose:menu' >~/xkb.log
+setxkbmap -layout 'us,ru' -option 'grp:shifts_toggle,compose:menu' >/tmp/xkb.log
 
 # Настройка мониторов
 # xrandr -q | grep connected
